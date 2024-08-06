@@ -42,4 +42,16 @@ func main() {
 	gasolineCar.Start()
 	gasolineCar.Drive()
 	gasolineCar.Stop()
+
+	// Create a new MotorCycle with Gasoline engine and fuel capacity of 20
+	gasolineMotorCycle := vehicle.NewMotorCycle(vehicle.Gasoline, 20)
+	gasolineMotorCycle.Start()
+	gasolineMotorCycle.Drive()
+	gasolineMotorCycle.Stop()
+
+	// Create a new MotorCycle with Electric engine and battery capacity of 50
+	electricMotorCycle := vehicle.NewMotorCycle(vehicle.Electric, 50)
+	electricMotorCycle.Start()
+	electricMotorCycle.Drive()
+	electricMotorCycle.Stop()
 }
